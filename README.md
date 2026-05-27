@@ -44,7 +44,68 @@ In this exercise you will:
 
 ```bash
 # Paste here the sequence of git commands you ran
+Habe leider zunächst im master die feature-datei erstellt und bin deswegen für den merge auf feature-not1 gewechselt.
+   68  mkdir PP5
+   69  ls
+   70  cd PP5
+   71  git init
+   72  vim feature.txt
+   73  git status
+   74  git add feature.txt
+   75  git status
+   76  git commit
+   77  cd
+   78  git config
+   79  git config --global user.email "lars.sandkuehler@stud.thga.de"
+   80  git config --global user.name "Lars"
+   81  cd PP5
+   82  git commit
+   83  vim feature.txt
+   84  git add feature.txt
+   85  git commit
+   86  git help merge
+   87  cd PP5/
+   88  git log
+   89  git checkout 3ef6
+   90  vim feature-not1.txt
+   91  git add feature-not1.txt
+   92  git status
+   93  git commit
+   94  git-merge
+   95  git help merge
+   96  git merge
+   97  git status
+   98  git checkout master
+   99  git merge
+  100  git merge bb8ca0f
+  101  git status
+  102  ls
+  103  history
 # and the relevant terminal output (e.g., branch listing, merge messages)
+commit cff1f68efacffe01ba86f9737601241e276f8423 (HEAD -> master)
+Author: Lars <lars.sandkuehler@stud.thga.de>
+Date:   Wed May 27 20:21:08 2026 +0200
+
+    feature-1
+
+    Neuer commit jetzt mit korrektem commit-Namen.
+
+commit 3ef65f66e654806f5436716c4eeb5a00191e6372
+Author: Lars <lars.sandkuehler@stud.thga.de>
+Date:   Wed May 27 20:12:56 2026 +0200
+
+    Leeres repo
+
+    Erstellung von feature.txt mit Kurzbeschreibung meiner Tätigkeit.
+
+    feature.txt vorhanden
+
+
+Merge made by the 'ort' strategy.
+ feature-not1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature-not1.txt
+
 ```
 
 ---
@@ -68,6 +129,26 @@ In this exercise you will:
 
 ```bash
 # Paste here the push & clone commands and outputs
+git push --set-upstream origin-ssh master
+
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.27 KiB | 259.00 KiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+To vorlesung:~/repos/myproject.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin-ssh/master'.
+
+git clone Lars311739@vorlesung:~/repos/myproject.git
+
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 11 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (11/11), done.
+Resolving deltas: 100% (1/1), done.
 ```
 
 ---
