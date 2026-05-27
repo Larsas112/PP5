@@ -171,6 +171,15 @@ Resolving deltas: 100% (1/1), done.
 
 ```bash
 # Paste here the remote‐adding & push outputs
+git remote add github git@github.com:Larsas112/myproject-gh.git
+git remote add gitlab  git@gitlab.thga.de:lars.sandkuehler/myproject-gl.git
+
+Ich konnte es mir leider nicht genau erklären, der Username mit Pfad stimmt genau mit dem aus GitHub und GitLab kopierten überein. Hier war die Zeit aber schon überschritten.
+spiel@ProBook-L:~$ git push --set-upstream github master
+fatal: not a git repository (or any of the parent directories): .git
+spiel@ProBook-L:~$ git push --set-upstream gitlab master
+fatal: not a git repository (or any of the parent directories): .git
+
 ```
 
 ---
